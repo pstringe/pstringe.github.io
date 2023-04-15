@@ -1,11 +1,31 @@
+import { Typography, Box } from "@mui/material";
+
+const styles = {
+    skill: {
+        width: '100%',
+        textAlign: 'center',
+        padding: '1rem',
+        mariginBottom: '1rem',
+        textAlign: 'left'
+    },
+}
+
 const Skill = ({skill}) => {
     return ( 
-        <div className="skill">
-            {skill?.name
-                ? <h3>{skill?.name}</h3>
-                : <h3>Unknown</h3>
-            }
-        </div>
+        <Box sx={styles.skill}>
+            <Typography variant="h5" className="skill">
+                {skill?.name
+                    ? skill?.name
+                    : 'Unknown'
+                }
+            </Typography>
+            <Typography variant="body" className="skill-level">
+                Skill Level: {skill?.skillLevel
+                    ? skill?.skillLevel
+                    : 'Unknown'
+                }
+            </Typography>
+        </Box>
     );
 }
  
