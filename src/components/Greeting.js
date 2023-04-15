@@ -27,6 +27,7 @@ const styles = {
         right: 100,
         top: '0',
         maxWidth: '40%',
+        maxHeight: '70vh',
         zIndex: '-1',
         opacity: '0.5',
     },
