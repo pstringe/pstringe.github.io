@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import { themeOptions } from './theme';
 import {ThemeProvider} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
+import Divider from '@mui/material/Divider';
 
 const skills = [
   {
@@ -47,6 +48,7 @@ function App() {
           <section className="top">
             <Greeting/>
           </section>  
+          <Divider variant='middle'/>
           <section className="mid">
             <SkillGrid skills={skills}/>
           </section>

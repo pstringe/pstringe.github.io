@@ -6,7 +6,7 @@ const styles = {
         display: 'flex',
         justifyContent: 'left',
         alignItems: 'center',
-        height: '50vh',
+        height: '55vh',
         marginBottom: '2rem'
     },
     titleBox: {
