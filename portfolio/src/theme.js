@@ -11,6 +11,10 @@ export const themeOptions = createTheme({
     },
   },
   typography: {
+    h1: {
+        fontFamily: 'Space Grotesk',
+        fontWeight: 700,
+    },
     h2: {
       fontFamily: 'Space Grotesk',
     },
