@@ -43,7 +43,7 @@ function App() {
     <ThemeProvider theme={themeOptions}>
       <CssBaseline />
       <div className="App">
-        <Container>
+        <Container maxWidth="sm">
           <Nav/>
           <section className="top">
             <Greeting/>

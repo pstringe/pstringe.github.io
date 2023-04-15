@@ -9,6 +9,9 @@ export const themeOptions = createTheme({
     secondary: {
       main: '#4ee1a0',
     },
+    text: {
+      main: '#fff',
+    },
   },
   typography: {
     h1: {
@@ -17,6 +20,10 @@ export const themeOptions = createTheme({
     },
     h2: {
       fontFamily: 'Space Grotesk',
+    },
+    h5: {
+      fontFamily: 'Space Grotesk',
+      fontWeight: 700,
     },
     fontFamily: 'Space Grotesk',
   },

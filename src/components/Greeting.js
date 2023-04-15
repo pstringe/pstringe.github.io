@@ -26,7 +26,7 @@ const styles = {
         position : 'absolute',
         right: 100,
         top: '0',
-        width: '40%',
+        maxWidth: '40%',
         zIndex: '-1',
         opacity: '0.5',
     },
