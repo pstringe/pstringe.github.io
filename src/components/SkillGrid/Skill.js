@@ -3,7 +3,6 @@ import { Typography, Box } from "@mui/material";
 const styles = {
     skill: {
         width: '100%',
-        textAlign: 'center',
         padding: '1rem',
         mariginBottom: '1rem',
         textAlign: 'left'
