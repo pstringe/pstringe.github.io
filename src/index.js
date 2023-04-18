@@ -8,6 +8,8 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import CaseStudy from './CaseStudy';
+
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,10 @@ const router = createBrowserRouter([
         path: "/",
         element: <Home />,
       },
+      {
+        path: "case-study/mindvitals",
+        element: <CaseStudy />,
+      }
     ],
   },
 ]);

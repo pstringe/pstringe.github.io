@@ -25,6 +25,10 @@ export const themeOptions = createTheme({
       fontFamily: 'Space Grotesk',
       fontWeight: 700,
     },
+    body: {
+      fontFamily: 'Space Grotesk',
+      textAlign: 'left',
+    },
     fontFamily: 'Space Grotesk',
   },
 });
