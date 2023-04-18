@@ -6,6 +6,8 @@ import { themeOptions } from './theme';
 import {ThemeProvider} from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import Home from './components/Home';
+import { Outlet } from "react-router-dom";
+
 function App() {
   return (
     <ThemeProvider theme={themeOptions}>
@@ -13,7 +15,7 @@ function App() {
       <div className="App">
         <Container maxWidth="sm">
           <Nav/>
-          <Home/>
+          <Outlet/>
         </Container>
         <Footer/>
       </div>
