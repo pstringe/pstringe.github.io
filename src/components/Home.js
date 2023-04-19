@@ -5,8 +5,6 @@ import Divider from '@mui/material/Divider';
 import ProjectGrid from './ProjectGrid/ProjectGrid'
 import MindvitalsImg from '../images/mindvitals/physicians-dashboard.png';
 
-const BASEURL = 'http://localhost:3000';
-
 const skills = [
     {
       name: 'Frontend',
@@ -39,7 +37,7 @@ const projects = [
         imgSrc: MindvitalsImg,
         title: 'Mindvitals',
         tags: ['React', 'Typescript', 'nest.js', 'MongoDB', 'AWS', ],
-        link: `${BASEURL}/case-study/mindvitals`
+        link: `/case-study/mindvitals`
     }
 ];
 
