@@ -31,6 +31,21 @@ const skills = [
     }
 ];
 
+const projects = [
+    {
+        imgSrc: 'https://i.imgur.com/4ZQZ1Zm.png',
+        title: 'PokeDex',
+        tags: ['React', 'JavaScript', 'CSS', 'HTML'],
+        link: ''
+    },
+    {
+        imgSrc: 'https://i.imgur.com/4ZQZ1Zm.png',
+        title: 'PokeDex',
+        tags: ['React', 'JavaScript', 'CSS', 'HTML'],
+        link: ''
+    },
+];
+
 const Home = () => {
     return ( 
     <>
@@ -40,10 +55,12 @@ const Home = () => {
           <Divider variant='middle'/>
           <section className="mid">
             <SkillGrid skills={skills}/>
+            <Divider variant='middle'/>
+            <ProjectGrid projects={projects}/>
           </section>
           <section className="bottom">
+
             <BottomHeader/>
-            <ProjectGrid/>
         </section>       
     </> 
     );
