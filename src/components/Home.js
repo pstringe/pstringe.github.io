@@ -3,6 +3,9 @@ import SkillGrid from './SkillGrid/SkillGrid';
 import BottomHeader from './BottomHeader';
 import Divider from '@mui/material/Divider';
 import ProjectGrid from './ProjectGrid/ProjectGrid'
+import MindvitalsImg from '../images/mindvitals/physicians-dashboard.png';
+
+const BASEURL = 'http://localhost:3000';
 
 const skills = [
     {
@@ -33,17 +36,11 @@ const skills = [
 
 const projects = [
     {
-        imgSrc: 'https://i.imgur.com/4ZQZ1Zm.png',
-        title: 'PokeDex',
-        tags: ['React', 'JavaScript', 'CSS', 'HTML'],
-        link: ''
-    },
-    {
-        imgSrc: 'https://i.imgur.com/4ZQZ1Zm.png',
-        title: 'PokeDex',
-        tags: ['React', 'JavaScript', 'CSS', 'HTML'],
-        link: ''
-    },
+        imgSrc: MindvitalsImg,
+        title: 'Mindvitals',
+        tags: ['React', 'Typescript', 'nest.js', 'MongoDB', 'AWS', ],
+        link: `${BASEURL}/case-study/mindvitals`
+    }
 ];
 
 const Home = () => {
@@ -59,7 +56,6 @@ const Home = () => {
             <ProjectGrid projects={projects}/>
           </section>
           <section className="bottom">
-
             <BottomHeader/>
         </section>       
     </> 

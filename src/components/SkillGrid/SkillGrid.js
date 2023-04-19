@@ -1,7 +1,9 @@
 import { Grid } from '@mui/material';
 import Skill from './Skill';
 const styles = {
- 
+    root: {
+        marginBottom: '2rem',
+    }
 }
 const SkillGrid = ({skills}) => {
     return ( 
@@ -11,7 +13,6 @@ const SkillGrid = ({skills}) => {
                 <Skill key={skill.id} skill={skill} />
             </Grid>
         ))}
-        
     </Grid> 
     );
 }
