@@ -1,5 +1,6 @@
 import Section from "./components/Section";
 import PhysiciansDashboard from './images/mindvitals/physicians-dashboard.png';
+import SurveyInterface from './images/mindvitals/survey-interface.png';
 import { Box } from "@mui/system";
 
 const caseData = [
@@ -27,12 +28,11 @@ You can find the code for it here:
         type: 'left-image',
         title: `Physician's Dashboard`,
         body: `
-lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Nullam auctor, nisl eget ultricies tincidunt, nunc nisl
-aliquam nisl, eu aliquam nisl nunc vel nisl. Sed euismod
-nunc eu nunc aliquam, nec ultricies nisl aliquam. Sed
-euismod nunc eu nunc aliquam, nec ultricies nisl aliquam.
-Sed euismod nunc eu nunc aliquam, nec ultricies nisl aliquam.
+* View and manage patient records
+* Construct and send assessment requests via email, SMS, and QR code
+* View and analyze patient assessment results
+* Intuitive scoring indicators of severity level
+* Data secured and isolated per clinic
         `,
         imgSrc: PhysiciansDashboard
     },
@@ -40,14 +40,25 @@ Sed euismod nunc eu nunc aliquam, nec ultricies nisl aliquam.
         type: 'right-image',
         title: 'Assessment Interface',
         body: `
-lorem ipsum dolor sit amet, consectetur adipiscing elit.
-Nullam auctor, nisl eget ultricies tincidunt, nunc nisl
-aliquam nisl, eu aliquam nisl nunc vel nisl. Sed euismod
-nunc eu nunc aliquam, nec ultricies nisl aliquam. Sed
-euismod nunc eu nunc aliquam, nec ultricies nisl aliquam.
-Sed euismod nunc eu nunc aliquam, nec ultricies nisl aliquam.
+As we advance through the survey, so too does the progress bar showing the user where they are in the process. This survey is a combination of two questionnaires but the user does not require this information. There are combinations whereby a scoring condition on one assessment will determine whether the following assessment is administered. 
+
+When the user finishes the assessment, they're shown their scores and given the option to share or request follow-up services. Back in the dashboard, authorized clinic personnel can view the results for each of the assessments included in the patient's questionnaire.
+
+* Patient may be administered assessments via email, text or QR code
+* Assessments constructed from any of GAD-7, PHQ-9 or EPDS.
+* Support for conditional assessments (Example: Only administer GAD-7 if PHQ-2 passes)
+* Patients may share their results or request follow-up services
+
+
+
+# Stack
+* **React** (typescript)
+* **node.js** API (nest.js typescript framework)
+* **MonogDB**
+* **GCP** (CI/CD and hosting)
+* **AWS** (email and sms services)
         `,
-        imgSrc: PhysiciansDashboard
+        imgSrc: SurveyInterface
     },
 ]
 
