@@ -1,4 +1,5 @@
-import {Box} from '@mui/material';
+import {Box, Typography} from '@mui/material';
+import {Link} from 'react-router-dom';
 
 const styles = {
     root: {
@@ -14,22 +15,25 @@ const styles = {
         flexDirection: 'row',
         justifyContent: 'left',
         alignItems: 'center',
-        gap: '1rem',
+        gap: '1rem'
+    },
+    link: {
+        textDecoration: 'none',
+        color: '#fff',
     }
 }
 
 const Project = ({imgSrc, title, tags, link}) => {
     return (
         <Box sx={styles.root}>
-            <a href={link} target="_blank" rel="noreferrer">
+            <Link to={link} style={styles.link}>
                 <Box sx={{}}>
                     <img src={imgSrc} alt="" style={styles.img} />
                 </Box>
-                <Box>
+                <Typography variant='h5'>
                     {title}
-                </Box>
-            </a>
-            <h1>Project</h1>
+                </Typography>
+            </Link>
             <Box sx={styles.tags}>
                 {tags.map((tag) => (
                     <Box >

@@ -20,7 +20,7 @@ const ProjectGrid = ({projects}) => {
         <Grid container className="project-grid" style={styles.root}>
             {projects?.map((project) => (
                 <Grid item xs={12} sm={6} md={4}>
-                    <Project imgSrc={project.imgSrc} project={project.title} tags={project.tags} link={project.link}/>
+                    <Project imgSrc={project.imgSrc} project={project.title} tags={project.tags} link={project.link} title={project.title}/>
                 </Grid>
             ))}
         </Grid> 
