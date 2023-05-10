@@ -26,14 +26,25 @@ const styles = {
 const Project = ({imgSrc, title, tags, link}) => {
     return (
         <Box sx={styles.root}>
-            <Link to={link} style={styles.link}>
-                <Box sx={{}}>
-                    <img src={imgSrc} alt="" style={styles.img} />
-                </Box>
-                <Typography variant='h5'>
-                    {title}
-                </Typography>
-            </Link>
+            {link.includes('http') ? 
+                <a href={link} style={styles.link}>
+                    <Box sx={{}}>
+                        <img src={imgSrc} alt="" style={styles.img} />
+                    </Box>
+                    <Typography variant='h5'>
+                        {title}
+                    </Typography>
+                </a> :
+                <Link to={link} style={styles.link}>
+                    <Box sx={{}}>
+                        <img src={imgSrc} alt="" style={styles.img} />
+                    </Box>
+                    <Typography variant='h5'>
+                        {title}
+                    </Typography>
+                </Link>
+            }
+            
             <Box sx={styles.tags}>
                 {tags.map((tag) => (
                     <Box >

@@ -31,7 +31,6 @@ const styles = {
         zIndex: '-1',
         opacity: '0.5',
     },
-
 }
 
 const Greeting = () => {
@@ -40,7 +39,7 @@ const Greeting = () => {
             <Box sx={styles.titleBox}>
                 <Typography variant='h2'sx={styles.title}>
                     Hi, Nice to Meet You! I'm <span style={styles.name}>Poitier Stringer</span></Typography>
-                <Typography variant='body'>Based in the US, I'm a front-end engineer passionate about building web apps user's love</Typography>
+                <Typography variant='body'>Based in the US, I'm a front-end engineer passionate about building web apps users love</Typography>
             </Box>
     
             <img  src={me} alt="me" style={styles.image}/>

@@ -1,0 +1,15 @@
+2023.04.20 16:01:48 INFO  Started: Metals version 0.11.11 in workspace '/Users/poitier/Documents/Projects/development/single-page-portfolio' for client Visual Studio Code 1.76.0.[0m
+SLF4J: No SLF4J providers were found.
+SLF4J: Defaulting to no-operation (NOP) logger implementation
+SLF4J: See https://www.slf4j.org/codes.html#noProviders for further details.
+SLF4J: Class path contains SLF4J bindings targeting slf4j-api versions 1.7.x or earlier.
+SLF4J: Ignoring binding found at [jar:file:/Users/poitier/Library/Caches/Coursier/v1/https/repo1.maven.org/maven2/com/outr/scribe-slf4j_2.13/3.11.0/scribe-slf4j_2.13-3.11.0.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See https://www.slf4j.org/codes.html#ignoredBindings for an explanation.
+2023.04.20 16:01:53 INFO  time: initialize in 5.01s[0m
+2023.04.20 16:01:58 WARN  Build server is not auto-connectable.[0m
+2023.04.20 16:01:58 WARN  no build tool detected in workspace '/Users/poitier/Documents/Projects/development/single-page-portfolio'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. [0m
+Apr 21, 2023 5:59:45 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2023.04.22 09:52:58 INFO  Shutting down server[0m
+2023.04.22 09:52:58 INFO  shutting down Metals[0m
+2023.04.22 09:52:58 INFO  Exiting server[0m

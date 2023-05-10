@@ -36,8 +36,8 @@ const projects = [
     {
         imgSrc: MindvitalsImg,
         title: 'Mindvitals',
-        tags: ['React', 'Typescript', 'nest.js', 'MongoDB', 'AWS', ],
-        link: `/case-study/mindvitals`
+        tags: ['React', 'Typescript', 'nest.js', 'MongoDB', 'AWS' ],
+        link: `https://midvitalsproviderdashboard-dot-mindvitals-384402.uc.r.appspot.com/login`
     }
 ];
 
